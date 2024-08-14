@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st 
 
 
-model=load_model(r'D:/computer vision practice code/all projects ml/image classification deep learning veg-fruit/models/image_classify.keras')
+model=load_model(r'models/image_classify.keras')
 
 data_classs= ['apple',
  'banana',
@@ -56,5 +56,5 @@ predict=model.predict(img_batch)
 score=tf.nn.softmax(predict)
 st.image(img,width=200)
 
-# st.write('veg/fruits is accuracy score  is  ',format(data_classs[np.argmax(score)]),np.max(score) *100)
-st.write('veg/fruits is accuracy score  is  ',format(img),np.max(score) *100)
+st.write('veg/fruits is accuracy score  is  ',format(data_classs[np.argmax(score)]),np.max(score) *100)
+# st.write('veg/fruits is accuracy score  is  ',format(img),np.max(score) *100)
