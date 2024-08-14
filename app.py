@@ -56,5 +56,5 @@ predict=model.predict(img_batch)
 score=tf.nn.softmax(predict)
 st.image(img,width=200)
 
-st.write('veg/fruits is accuracy score  is  ',format(data_classs[np.argmax(score)]),np.max(score) *100)
-# st.write('veg/fruits is accuracy score  is  ',format(img),np.max(score) *100)
+# st.write('veg/fruits is accuracy score  is  ',format(data_classs[np.argmax(score)]),np.max(score) *100)
+st.write('veg/fruits is accuracy score  is  ',format(img),np.max(score) *100)
