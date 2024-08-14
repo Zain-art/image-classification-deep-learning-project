@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st 
 
 
-model=load_model(r'D:\computer vision practice code\all projects ml\image classification deep learning veg-fruit\models\image_classify.keras')
+model=load_model(r'D:/computer vision practice code/all projects ml/image classification deep learning veg-fruit/models/image_classify.keras')
 
 data_classs= ['apple',
  'banana',
